@@ -5,7 +5,7 @@
 
 ---
 
-## 📝 Sobre o Repositório
+##  Sobre o Repositório
 Este repositório é dedicado à disciplina de **Engenharia de Prompt e Aplicações em Inteligência Artificial**. A proposta segue uma abordagem dinâmica, com material de apoio direcionado para aplicações práticas em IA.
 
 ##  Objetivo
