@@ -10,8 +10,8 @@ Entretanto, para que essa parceria seja efetiva, é fundamental que o desenvolve
 
 Em conclusão, a Inteligência Artificial consolidou-se como uma aliada estratégica que potencializa a inovação e a eficiência no desenvolvimento de software. O futuro da área exige que o profissional saiba orquestrar ferramentas inteligentes com responsabilidade, unindo a precisão computacional da máquina à criatividade e ao julgamento crítico humano. Ao equilibrar o aumento exponencial da produtividade com a vigilância necessária contra alucinações lógicas e falhas de segurança, o desenvolvedor garante um uso ético e seguro da tecnologia, posicionando-se como o agente decisor em um cenário tecnológico cada vez mais assistido e automatizado.
 
-## 7. Fontes
-* **Refatoração textual assistida por Gemini (Google).**
+**Fontes:**
+* **Refatoração textual:** Assistida por Gemini (Google).
 * **Produtividade e Workflow:** [GitHub Blog - Impact Research](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
 * **Tendências de Adoção:** [Stack Overflow Survey 2024](https://survey.stackoverflow.co/2024/ai)
 * **Segurança em LLMs:** [OWASP Top 10 Project](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
