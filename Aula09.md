@@ -1,3 +1,6 @@
+<img width="493" height="432" alt="image" src="https://github.com/user-attachments/assets/b28560f0-b569-4770-a19a-fb564e82c2f8" />
+
+
 # Parecer Individual – Unidade II
 
 ---
