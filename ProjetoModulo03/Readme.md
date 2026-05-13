@@ -2,6 +2,7 @@
 
 ## 📌 Desafio Escolhido
 
+Indetificação para horario de tomar remedios
 Descreva aqui o desafio proposto pelo grupo (ex.: cadastro de usuários, automação de envio de e-mails, integração com API de IA).
 
 ---
@@ -56,6 +57,9 @@ Explique como o grupo lidou com as limitações e quais soluções criativas for
 
 ## 👥 Colaboração
 
+Gabriel Paz
+Matheus Teixera, Deu a ideia
+Daniel Santos
 Descreva como o grupo organizou as tarefas e responsabilidades entre os integrantes.
 
 ---
