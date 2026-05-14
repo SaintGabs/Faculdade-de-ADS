@@ -2,8 +2,7 @@
 
 ## 📌 Desafio Escolhido
 
-Indetificação para horario de tomar remedios
-Descreva aqui o desafio proposto pelo grupo (ex.: cadastro de usuários, automação de envio de e-mails, integração com API de IA).
+Alerta de medicamentos através de um sistema que calcula o horario para as proximas ingestões, eliminando o erro humano e a necessidade de registros manuais através de envio de email.
 
 ---
 
@@ -19,9 +18,9 @@ Descreva aqui o desafio proposto pelo grupo (ex.: cadastro de usuários, automa�
 
 ## ⚙️ Plataforma Utilizada
 
-- Nome da plataforma (ex.: Bubble, Make, Pipedream).
+- Nome da plataforma Copilot e Gemini
 
-- Justificativa da escolha: por que essa ferramenta foi selecionada para o desafio?
+- Justificativa da escolha: Uso do Copilot foi o melhor para implementação e desenvolvimento; O Gemini para validação de requisitos e refinamento de prompts, pois foi o mais habitual
 
 ---
 
@@ -29,11 +28,11 @@ Descreva aqui o desafio proposto pelo grupo (ex.: cadastro de usuários, automa�
 
 Liste pelo menos **3 vantagens** percebidas no uso da abordagem low code/no code/vibecode:
 
-1. Protótipo rápido
+1. Rapidez para ciação
 
-2. Integração simples
+2. Praticidade no desenvolvimento da ideia
 
-3. Automação de processos
+3. Sugestões de melhorias e refatoração de processos
 
 ---
 
@@ -41,11 +40,11 @@ Liste pelo menos **3 vantagens** percebidas no uso da abordagem low code/no code
 
 Liste pelo menos **3 limitações** percebidas:
 
-1. Customização limitada
+1. Nescessidade de objetividade e explicação de forma bem clara, para nao haver interpretaçoes por parte da IA
+2. 
+3. Dependência da plataforma
 
-2. Dependência da plataforma
-
-3. Risco de lock-in tecnológico
+4. Risco de lock-in tecnológico
 
 ---
 
