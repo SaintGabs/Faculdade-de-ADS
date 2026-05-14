@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmado - MediControl</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="success-page">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>💊 MediControl</h1>
+                <p>Monitoramento de Medicamentos</p>
+            </div>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <section class="success-section">
+            <div class="success-card">
+                <div class="success-icon">✓</div>
+                <h1>Ingestão Confirmada!</h1>
+                <p>Seu medicamento foi registrado com sucesso.</p>
+                
+                <div class="success-message">
+                    <p>O próximo horário de ingestão foi agendado automaticamente.</p>
+                    <p>Você receberá um novo alerta no horário programado.</p>
+                </div>
+
+                <div class="success-actions">
+                    <a href="/" class="btn-primary btn-lg">Voltar ao Dashboard</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 MediControl - Sistema de Monitoramento de Medicamentos</p>
+    </footer>
+</body>
+</html>

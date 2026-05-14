@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erro - MediControl</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="error-page">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>💊 MediControl</h1>
+                <p>Monitoramento de Medicamentos</p>
+            </div>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <section class="error-section">
+            <div class="error-card">
+                <div class="error-icon">⚠️</div>
+                <h1>Erro ao Processar</h1>
+                <p>Desculpe, ocorreu um erro ao processar sua solicitação.</p>
+                
+                <div class="error-message">
+                    <p>Possíveis causas:</p>
+                    <ul>
+                        <li>Link expirado ou inválido</li>
+                        <li>Medicamento não encontrado</li>
+                        <li>Erro no servidor</li>
+                    </ul>
+                </div>
+
+                <div class="error-actions">
+                    <a href="/" class="btn-primary btn-lg">Voltar ao Dashboard</a>
+                    <a href="/register" class="btn-secondary btn-lg">Cadastrar Novo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 MediControl - Sistema de Monitoramento de Medicamentos</p>
+    </footer>
+</body>
+</html>
