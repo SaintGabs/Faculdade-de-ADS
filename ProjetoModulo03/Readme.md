@@ -41,35 +41,33 @@ Liste pelo menos **3 vantagens** percebidas no uso da abordagem low code/no code
 Liste pelo menos **3 limitações** percebidas:
 
 1. Nescessidade de objetividade e explicação de forma bem clara, para nao haver interpretaçoes por parte da IA
-2. 
-3. Dependência da plataforma
-
-4. Risco de lock-in tecnológico
-
+2. Alteraraçoes pequenas precisa reestruturar todo o codigo
+3. 
 ---
 
 ## 📚 Reflexão Crítica
 
 Explique como o grupo lidou com as limitações e quais soluções criativas foram propostas para contorná-las.
 
+Utilizamos duas IAs uma para a criação o prompt para a outra desenvolver o código, sempre recusamos a primeira resposta das duas IAs;
+
 ---
 
 ## 👥 Colaboração
 
-Gabriel Paz
-Matheus Teixera, Deu a ideia
-Daniel Santos
-Descreva como o grupo organizou as tarefas e responsabilidades entre os integrantes.
+Gabriel Paz, Desenvolvimento do Readme
+Matheus Teixera, Contrução do Site
+Daniel Santos, Protipagem do sistema
 
 ---
 
 ## 📝 Registro da Aula
 
-Data: **11/05/2026**  
+Data: **13/05/2026**  
 
 Atividade: Discussão crítica + mini-projeto de aplicação  
 
-Local: Laboratório de informática / Quadro branco  
+Local: Laboratório de informática
 
 Professor(a): Kadidja Valéria  
 
