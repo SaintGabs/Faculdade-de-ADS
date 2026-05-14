@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Medicamento - MediControl</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>💊 MediControl</h1>
+                <p>Monitoramento de Medicamentos</p>
+            </div>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Dashboard</a>
+                <a href="/register" class="nav-link active">Novo Medicamento</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <section class="form-section">
+            <div class="form-container">
+                <h2>Cadastrar Novo Medicamento</h2>
+                <form id="medicationForm" class="form-group">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="name">Nome do Medicamento *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                required
+                                placeholder="Ex: Omeprazol, Ibuprofeno"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-row two-columns">
+                        <div class="form-field">
+                            <label for="time">Horário de Ingestão (HH:MM) *</label>
+                            <input 
+                                type="time" 
+                                id="time" 
+                                name="time" 
+                                required
+                            >
+                        </div>
+
+                        <div class="form-field">
+                            <label for="dosage">Dosagem/Quantidade *</label>
+                            <input 
+                                type="text" 
+                                id="dosage" 
+                                name="dosage" 
+                                required
+                                placeholder="Ex: 20mg, 1 comprimido"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-row two-columns">
+                        <div class="form-field">
+                            <label for="email">E-mail para Receber Alertas *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required
+                                placeholder="seu_email@gmail.com"
+                            >
+                        </div>
+
+                        <div class="form-field">
+                            <label for="interval">Intervalo (em horas)</label>
+                            <input 
+                                type="number" 
+                                id="interval" 
+                                name="interval_hours" 
+                                value="24"
+                                min="1"
+                                max="168"
+                            >
+                            <small>Padrão: 24 horas (uso diário)</small>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary btn-lg">✓ Cadastrar Medicamento</button>
+                        <a href="/" class="btn-secondary">Cancelar</a>
+                    </div>
+                </form>
+
+                <!-- Mensagens de Feedback -->
+                <div id="message" class="message" style="display: none;"></div>
+            </div>
+
+            <!-- Guia de Preenchimento -->
+            <div class="guide-container">
+                <h3>📋 Guia de Preenchimento</h3>
+                <div class="guide-item">
+                    <strong>Nome do Medicamento:</strong>
+                    <p>Nome completo ou comercial do medicamento (ex: Omeprazol, Dipirona)</p>
+                </div>
+                <div class="guide-item">
+                    <strong>Horário de Ingestão:</strong>
+                    <p>Digite o horário no formato HH:MM (ex: 08:00, 14:30, 22:00)</p>
+                </div>
+                <div class="guide-item">
+                    <strong>Dosagem:</strong>
+                    <p>Quantidade prescrita pelo médico (ex: 20mg, 500mg, 1 comprimido)</p>
+                </div>
+                <div class="guide-item">
+                    <strong>E-mail:</strong>
+                    <p>E-mail onde você receberá os alertas automáticos</p>
+                </div>
+                <div class="guide-item">
+                    <strong>Intervalo:</strong>
+                    <p>De quantas em quantas horas deve tomar o medicamento (padrão: 24h)</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 MediControl - Sistema de Monitoramento de Medicamentos</p>
+        <p>Desenvolvido como projeto acadêmico</p>
+    </footer>
+
+    <script>
+        document.getElementById('medicationForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const form = e.target;
+            const messageDiv = document.getElementById('message');
+
+            try {
+                const data = {
+                    name: document.getElementById('name').value,
+                    time: document.getElementById('time').value,
+                    dosage: document.getElementById('dosage').value,
+                    email: document.getElementById('email').value,
+                    interval_hours: parseInt(document.getElementById('interval').value)
+                };
+
+                const response = await fetch('/api/medications', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    messageDiv.className = 'message success';
+                    messageDiv.textContent = '✓ Medicamento cadastrado com sucesso!';
+                    messageDiv.style.display = 'block';
+                    form.reset();
+                    
+                    setTimeout(() => {
+                        window.location.href = '/';
+                    }, 2000);
+                } else {
+                    const error = await response.json();
+                    throw new Error(error.error || 'Erro ao cadastrar');
+                }
+            } catch (error) {
+                messageDiv.className = 'message error';
+                messageDiv.textContent = '✗ Erro: ' + error.message;
+                messageDiv.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

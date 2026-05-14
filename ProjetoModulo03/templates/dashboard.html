@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediControl - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>💊 MediControl</h1>
+                <p>Monitoramento de Medicamentos</p>
+            </div>
+            <div class="nav-menu">
+                <a href="/" class="nav-link active">Dashboard</a>
+                <a href="/register" class="nav-link">Novo Medicamento</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <section class="dashboard-section">
+            <div class="section-header">
+                <h2>Meus Medicamentos</h2>
+                <a href="/register" class="btn-primary btn-lg">+ Adicionar Medicamento</a>
+            </div>
+
+            <!-- Lista de Medicamentos -->
+            <div class="medications-grid" id="medications-list">
+                <div class="loading" style="grid-column: 1/-1; text-align: center;">
+                    <p>⏳ Carregando medicamentos...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Informações Úteis -->
+        <section class="info-section">
+            <div class="info-card">
+                <h3>📱 Como Funciona?</h3>
+                <ul>
+                    <li>1️⃣ Cadastre seus medicamentos com horário e dosagem</li>
+                    <li>2️⃣ Receba alertas automáticos por e-mail na hora programada</li>
+                    <li>3️⃣ Confirme a ingestão clicando no link do e-mail</li>
+                    <li>4️⃣ Sistema agenda automaticamente o próximo ciclo</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3>⚠️ Importante</h3>
+                <ul>
+                    <li>✅ Verifique se seus e-mails estão corretos</li>
+                    <li>✅ Mantenha a aplicação executando para receber alertas</li>
+                    <li>✅ Confirme cada ingestão para agendar a próxima</li>
+                    <li>✅ Você pode remover medicamentos a qualquer momento</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 MediControl - Sistema de Monitoramento de Medicamentos</p>
+        <p>Desenvolvido como projeto acadêmico</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>
